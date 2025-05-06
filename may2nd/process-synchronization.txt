@@ -1,0 +1,30 @@
+Process synchronization: when multiple process running in system symultanusly then it could be two modes one is serial mode and other is parallel mode.
+Serial mode: process will get executes one by one.when one process got started , other process can't start until it won't get terminated.
+Parallel Mode: process will get execute parallel at same time , that there could be some processes which are cooperative and others could be independent 
+
+Types of process synchnization
+1.)Cooperative process: they mostly sharing some of the concept like might be memory, variable, code ,Resource like(cpu, printer,scanner ) due to that it its get stuck and we are facing issue related to deadlock(like two or more process waiting for each other to gets executed).
+2.) Independent Process
+
+process 1 and process 2
+int x = shared;   |  int y = shared;
+x++;	          |  y--;
+sleep(1);         |  sleep(1);
+shared = x;       |  shared = y;
+
+
+here when process 1 is running line 1, 2,3 and its go for sleep/ wait for one second mean while p2 also start executing in middle to process get shared some variiable and  process enter into race condition .and after one second again p1 will get executed next.
+
+
+/**********************************Dead Lock***********************/
+
+Dead Lock: if two or more process are waiting on happening on some event , which never happend ,or we can say these process are in dead lock stage.
+
+
+
+
+
+
+
+
+

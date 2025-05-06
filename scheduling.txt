@@ -1,0 +1,43 @@
+----------------------LINUX SYSTEM PROGRAMMING--------------------------------------
+
+PCB: for every process create a block of information in kernal space is known as pcb . pcb contains: pid( parent id) and ppid ( parent process id):which is created by another process , that anther process is called parent process.
+
+3.) file descripter table: (fd table): it contain information of opened file that are being opened by the programmer . there are many  files in kernal but if does not maintains all the info of those files.
+4.) signal disposition table/signal disposition/ disposition of table / signal behaviour tbale
+ when we are hanging in the infinite loop, then we press the key to come out of the loop.
+ ctrl + c -> termination
+ ctrl +z --> suspend
+ these combination we used in kernal space generate the signal.
+ IMproper handling of poinetr causes crash during runtime of execution and program crashed with segmentation fault . then this process is aborted using signaling mechanism.
+ 
+ 
+ fork() : fork is system call which is used to create a  child process which is createing a child process iusing fork() syscall is called parent process . when fork() is invoked then pcb is created in kernal space for child process and some additional memory is created in user space for child process .
+ fork() returns twice.once in parent process and once in child process.
+ fork() return pid in parent process and 0 in child process.
+ 
+ 
+ -----------------------------PROCESS SCHEDULING-----------------------/
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

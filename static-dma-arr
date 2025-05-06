@@ -1,0 +1,28 @@
+/****************NOTES************************/
+
+Static memory allocation: Memory allocated during compile time is called static memory.
+
+PROBLEM FACED IN STATIC MEMORY ALLOCATION
+
+1.) If you are allocating memory for an array during compile time then you have to fix the size at the time of declaration .Size is fixed and user cannot increase or decrease the size of the array at run time.
+
+2.) If the values stored by the user in the array at run time less than the size specified then there will be wastage of memory.
+
+3.)If the values stored by the user in the array at run time is more than the size specified then the program may crash or misbehave.
+
+/******************DYNAMIC MEMORY ALLOCATION(DMA)*******************/
+The process of allocating memory at the time of execution is called dynamic memory allocation.
+:--> Heap is the segment of memory where dynamic memory allocation takes place.
+Unlike stack where memory is allocated or deallocated in a defined order, heap is an area of memory where memory is allocated or deallocated whitout any order or randomly.
+-->There are certain built-in fuctions that can help in allocating or deallocating some memory at runtime.
+
+NOTES: pointer play an important role in DMA . allocated memory can only be accesses through pointers.
+ built-in Function :
+1.)maloc()
+2.)calloc()
+3.) realloc()
+4.)free()
+
+
+/--------------------------------------------------------------/
+
